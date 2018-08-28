@@ -5,6 +5,8 @@ import {
     Link
 } from "react-router-dom";
 
+import {Admin, User} from './Auth';
+
 const Navigation = () => (
     <ul style={{display: "flex", justifyContent: "space-around" }}>
         <li><Link to="/"> Home </Link></li>
@@ -30,8 +32,8 @@ const MainRouter = () => (
         <Fragment>
             <Navigation/>
             <Route path="/" component={HomeComponent} exact={true} />
-            <Route path="/admin" component={AdminComponent} />
-            <Route path="/user" component={UserComponent} />
+            <Route path="/admin" component={Admin(AdminComponent)} />
+            <Route path="/user" component={User(UserComponent)} />
         </Fragment>
     </Router>
 );
