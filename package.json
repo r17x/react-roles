@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-scripts": "3.0.0"
   },
   "scripts": {
@@ -16,8 +16,8 @@
     "deploy:travis": "gh-pages-with-token -d build"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "gh-pages-with-token": "^1.0.0",
-    "react-router-dom": "^4.3.1"
+    "gh-pages": "2.0.1",
+    "gh-pages-with-token": "1.0.0",
+    "react-router-dom": "4.3.1"
   }
 }
